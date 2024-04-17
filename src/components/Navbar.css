@@ -1,0 +1,7 @@
+
+#Home:hover{
+    color: rgb(255, 135, 135);
+}
+#Home:active{
+    color: red;
+}
