@@ -1,28 +1,30 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
 import Layout from './Layout';
 import Home from './components/Home';
 import About from './components/About';
 import Categories from './components/Categories';
 import Contact from './components/Contact';
 
-ReactDOM.render(
+const router=createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<Layout/>}>
+      <Route path='' element={<Home/>} />
+      <Route path='about/' element={<About/>} />
+      <Route path='categories/' element={<Categories/>} />
+      <Route path='contact/' element={<Contact/>} />
+    </Route>
+  )
+)
+const root=createRoot(document.getElementById('root'));
+
+root.render(
   <React.StrictMode>
-    <Router basename="/">
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route exact path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="categories" element={<Categories />} />
-          <Route path="contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </Router>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+    <RouterProvider router={router}/>
+  </React.StrictMode>
+)
 
 reportWebVitals();

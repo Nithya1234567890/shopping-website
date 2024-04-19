@@ -23,7 +23,7 @@ const Home = () => {
           >
             60% discount
           </p>
-          <h1 style={{ fontSize: "6.5em", fontFamily: "Bree Serif, serif" }}>
+          <h1 style={{ fontSize: "6.5em", fontFamily: "Bree Serif, serif", transform:"translate-X(5)"}}>
             Winter Collections
           </h1>
           <p style={{ fontSize: "2.5em", fontFamily: "Lobster, sans-serif" }}>
