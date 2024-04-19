@@ -1,19 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './Navbar.css'
 
 const Navbar = () => {
   const loc = useLocation();
-
+  useEffect(()=>{
+    console.log(loc.pathname)
+  },[loc]);
   return (
     <div style={{boxShadow: "1px 1px 3px black", backgroundColor: "white", zIndex: "10"}} className="container-fluid d-flex justify-content-between align-items-center p-3 position-sticky top-0">
       <div style={{width: "22%", fontSize: "2.5rem", background: "linear-gradient(to top, #ff002d, yellow, blue)", WebkitBackgroundClip: "text", backgroundClip: "text", color: "transparent"}} className="logo">Ecart.</div>
       <div className="items">
         <ul style={{listStyleType: "none", marginTop: "16px"}} className='d-flex justify-content-between'>
-          <li><Link style={{textDecoration: "none", padding: "15px", fontSize: "1.2em"}} className={`text-${loc.pathname === '/' ? "danger" : "black"}`} to="/">Home</Link></li>
-          <li><Link style={{textDecoration: "none", padding: "15px", fontSize: "1.2em"}} className={`text-${loc.pathname === '/about/' ? "danger" : "black"}`} to="/about/">About</Link></li>
-          <li><Link style={{textDecoration: "none", padding: "15px", fontSize: "1.2em"}} className={`text-${loc.pathname === '/categories/' ? "danger" : "black"}`} to="/categories/">Categories</Link></li>
-          <li><Link style={{textDecoration: "none", padding: "15px", fontSize: "1.2em"}} className={`text-${loc.pathname === '/contact/' ? "danger" : "black"}`} to="/contact/">Contact Us</Link></li>
+          <li><Link style={{textDecoration: "none", padding: "15px", fontSize: "1.2em"}} className={`text-${(loc.pathname === '/shopping-website/' || loc.pathname === '/shopping-website') ? "danger" : "black"}`} to="">Home</Link></li>
+          <li><Link style={{textDecoration: "none", padding: "15px", fontSize: "1.2em"}} className={`text-${loc.pathname === '/shopping-website/about/' ? "danger" : "black"}`} to="about/">About</Link></li>
+          <li><Link style={{textDecoration: "none", padding: "15px", fontSize: "1.2em"}} className={`text-${loc.pathname === '/shopping-website/categories/' ? "danger" : "black"}`} to="categories/">Categories</Link></li>
+          <li><Link style={{textDecoration: "none", padding: "15px", fontSize: "1.2em"}} className={`text-${loc.pathname === '/shopping-website/contact/' ? "danger" : "black"}`} to="contact/">Contact Us</Link></li>
         </ul>
       </div>
       <div className="end d-flex justify-content-around align-items-center" style={{width: "32%"}}>

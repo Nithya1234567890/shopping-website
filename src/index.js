@@ -11,7 +11,7 @@ import Contact from './components/Contact';
 
 const router=createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout/>}>
+    <Route path='shopping-website/' element={<Layout/>}>
       <Route path='' element={<Home/>} />
       <Route path='about/' element={<About/>} />
       <Route path='categories/' element={<Categories/>} />
