@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <>
       <div
-        className="d-flex justify-content-evenly align-items-center"
+        className="header d-flex justify-content-evenly align-items-center"
         style={{ backgroundColor: "#c0e8ff" }}
       >
         <img
@@ -46,7 +46,7 @@ const Home = () => {
               Shop by Category
             </h1>
           </div>
-          <div className="row">
+          <div className="row cat">
             <div className="col-lg-6 col-xl-4">
               <div className="card">
                 <img
@@ -172,9 +172,9 @@ const Home = () => {
       </div>
       <div className="latest-section" style={{ padding: "6rem 14em" }}>
         <div className="container-fluid">
-          <div className="row">
+          <div className="row lat">
             <div
-              className="col-md-8"
+              className="col-md-8 lat-left"
               style={{
                 fontFamily: "Playfair Display, serif",
                 fontSize: "3.5rem",
@@ -183,7 +183,7 @@ const Home = () => {
             >
               Latest Products
             </div>
-            <div className="col-md-4" style={{ padding: "2.5rem" }}>
+            <div className="col-md-4 lat-right" style={{ padding: "2.5rem" }}>
               <div
                 className="container d-flex justify-content-evenly align-items-center"
                 style={{ fontSize: "1.4em", color: "gray" }}
@@ -195,7 +195,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="row mt-5">
+          <div className="row mt-5 pro">
             <div
               className="products col-md-6 col-xl-4 col-lg-4 d-flex align-items-center p-2"
               style={{ flexDirection: "column" }}
@@ -843,7 +843,7 @@ const Home = () => {
         >
           <div className="container" style={{ maxWidth: "1170px" }}>
             <div className="row d-flex align-items-center">
-              <div className="col-md-6 col-xl-5 col-lg-5">
+              <div className="lat-left col-md-6 col-xl-5 col-lg-5">
                 <div className="latest-caption position-relative">
                   <h2
                     style={{
@@ -861,7 +861,7 @@ const Home = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-6 col-xl-5 col-lg-5">
+              <div className="lat-right col-md-6 col-xl-5 col-lg-5">
                 <div className="latest-subscribe position-relative">
                   <form action="">
                     <input
@@ -943,7 +943,7 @@ const Home = () => {
       >
         <div className="gallery-area">
           <div className="container-fluid">
-            <div className="row">
+            <div className="row gal">
               <div className="gallery-items" style={{ width: "20%" }}>
                 <img
                   src="https://preview.colorlib.com/theme/estore/assets/img/gallery/gallery1.jpg"

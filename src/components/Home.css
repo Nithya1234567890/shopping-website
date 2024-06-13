@@ -97,3 +97,179 @@
 .mb-40 {
     margin-bottom: 40px;
 }
+
+@media screen and (max-width:991px){
+    .header{
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .header img{
+        width: 100%;
+    }
+    .header h1{
+        font-size: 4rem !important;
+    }
+    .cat{
+        display: flex;
+        gap: 20px;
+    }
+    .lat{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .lat-left{
+        width: 100%;
+        text-align: center;
+    }
+    .lat-right{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .product-desc{
+        display: flex;
+        flex-direction: column;
+        top:10%;
+        gap: 20px;
+    }
+    .pro{
+        flex-wrap: wrap;
+    }
+    .products{
+        width: 100%;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .products img{
+        width: 100%;
+    }
+    .latest-section{
+        margin: 0 !important;
+    }
+    .best-product-section{
+        padding: 2rem !important;
+        margin: 0 !important;
+        text-align: center;
+    }
+    .best-product-section .box{
+        padding:5rem 4rem !important;
+        text-align: center;
+        width: 100%;
+    }
+    .best-collection-area{
+        padding-block: 80px !important;
+    }
+    .best-left-img{
+        display: none !important;
+    }
+    .shop-method-area{
+        padding-block: 100px !important;
+    }
+    .gallery-items{
+        width: 46% !important;
+    }
+    .gal{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .latest .man{
+        display: none;
+    }
+    .gallery-wrapper{
+        margin-bottom: 50px !important;
+    }
+}
+@media screen and (max-width:768px) {
+    .gallery-items{
+        width: 100% !important;
+    }
+    .gallery-items img{
+        width: 100% !important;
+    }
+    .latest{
+        text-align: center;
+    }
+    .single-method{
+        text-align: center;
+    }
+    .lat-left{
+        width: 100%;
+        text-align: center;
+    }
+    .lat-right{
+        width: 100%;
+    }
+    .latest-section{
+        padding: 2rem !important;
+    }
+}
+@media screen and (max-width:467px) {
+    .disc p{
+        line-height: 3rem;
+    }
+    .category-section{
+        padding: 2.5rem !important;
+    }
+    .category-section h1{
+        margin-bottom: 2rem !important;
+        width: 100% !important;
+    }
+    .product-desc{
+        top: 20% !important;
+        right: 5px !important;
+        width: 40%;
+        font-size: 1rem !important;
+        gap: 2px;
+    }
+    .product-desc p{
+        font-size: 1.5rem !important;
+    }
+    .product-desc button{
+        font-size: 2rem !important;
+        width: 100% !important;
+        padding: 0;
+    }
+    .lat-left{
+        font-size: 2rem !important;
+    }
+    .lat-right{
+        padding: 1.5rem !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .shirts{
+        display: none !important;
+    }
+    .best-left-cap h2{
+        font-size: 2rem !important;
+    }
+    .best-product-section .box{
+        padding: 2rem !important;
+    }
+    .best-product-section h1{
+        font-size: 2rem !important;
+    }
+    .best-collection-area{
+        margin: 0px !important;
+        padding: 40px !important;
+        text-align: center;
+    }
+    .latest-caption p{
+        margin-bottom: 20px !important;
+    }
+    .latest-caption h2{
+        font-size: 2rem !important;
+    }
+    .latest-subscribe button{
+        padding-inline: 20px !important;
+    }
+    .shop-method-area{
+        padding: 30px !important;
+    }
+    .gallery-wrapper{
+        padding: 30px !important;
+    }
+}

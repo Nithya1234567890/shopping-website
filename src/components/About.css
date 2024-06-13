@@ -135,3 +135,31 @@ a, button {
     color: #fff;
     outline: medium none;
 }
+@media screen and (max-width:991px) {
+    .feature_part{
+        padding: 30px !important;
+        text-align: center;
+    }
+    .about_us{
+        padding-top: 60px !important;
+        text-align: center;
+    }
+    .im{
+        flex-wrap: wrap;
+    }
+    .single_feature_part{
+        margin: 30px !important;
+        padding: 20px !important;
+    }
+    .single_feature_part img{
+       width: 100% !important;
+    }
+}
+@media screen and (max-width:467px){
+    .single_feature_part{
+        margin: 10px !important;
+    }
+    .subscribe_part{
+        padding-block: 70px;
+    }
+}

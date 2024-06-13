@@ -111,7 +111,7 @@ const Contact = () => {
               </div>
               <div className="media contact-info">
                 <span className="contact-info__icon">
-                  <i className="ti-tablet"></i>
+                <i class="fa-solid fa-tablet"></i>
                 </span>
                 <div className="media-body">
                   <h3>+1 253 565 2365</h3>
@@ -120,7 +120,7 @@ const Contact = () => {
               </div>
               <div className="media contact-info">
                 <span className="contact-info__icon">
-                  <i className="ti-email"></i>
+                <i class="fa-regular fa-envelope"></i>
                 </span>
                 <div className="media-body">
                   <h3>support@colorlib.com</h3>
@@ -141,7 +141,7 @@ const Contact = () => {
       >
         <div className="gallery-area">
           <div className="container-fluid">
-            <div className="row">
+            <div className="row gal">
               <div className="gallery-items" style={{ width: "20%" }}>
                 <img
                   src="https://preview.colorlib.com/theme/estore/assets/img/gallery/gallery1.jpg"

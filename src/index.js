@@ -19,6 +19,7 @@ const router=createBrowserRouter(
     </Route>
   )
 )
+
 const root=createRoot(document.getElementById('root'));
 
 root.render(

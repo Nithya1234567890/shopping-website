@@ -208,7 +208,7 @@ const Categories = () => {
       >
         <div className="gallery-area">
           <div className="container-fluid">
-            <div className="row">
+            <div className="row gal">
               <div className="gallery-items" style={{ width: "20%" }}>
                 <img
                   src="https://preview.colorlib.com/theme/estore/assets/img/gallery/gallery1.jpg"

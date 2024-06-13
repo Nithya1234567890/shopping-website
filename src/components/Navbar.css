@@ -5,3 +5,40 @@
 #Home:active{
     color: red;
 }
+.nav-toggle{
+    display: none;
+}
+.end{
+    display: none !important;
+} 
+@media screen and (max-width:470px){
+    .end{
+        display: none !important;
+    }
+    .nav{
+        position: relative;
+    }
+    .nav-toggle{
+        display: block;
+        font-size: larger;
+        margin-right: 20px;
+    }
+    .items{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        top: 60%;
+        background-color: white;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        left: 0;
+        transform: translateX(-300px);
+        transition: all 0.4s ease-in-out;
+    }
+    .items.active{
+        transform: translateX(300px);
+    }
+}

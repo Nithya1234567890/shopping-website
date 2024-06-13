@@ -46,7 +46,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="row justify-content-center">
+          <div className="im row justify-content-center">
             <div className="col-lg-3 col-sm-6">
               <div className="single_feature_part">
                 <img src="https://preview.colorlib.com/theme/estore/assets/img/icon/feature_icon_1.svg" alt=""/>

@@ -1,0 +1,29 @@
+@media screen and (max-width:991px){
+    .footer{
+        padding: 2rem !important;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .estore,.links{
+        width: 45% !important;
+    }
+}
+@media screen and (max-width:768px){
+    .footer{
+        padding: 4rem !important;
+    }
+    .estore,.links{
+        width: 100% !important;
+        text-align: center;
+    }
+}
+@media screen and (max-width:468px){
+    .footer{
+        padding: 2rem !important;
+        padding-top: 0 !important;
+    }
+    .estore,.links{
+        width: 100% !important;
+        text-align: center;
+    }
+}
